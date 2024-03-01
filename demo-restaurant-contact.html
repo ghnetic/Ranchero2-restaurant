@@ -116,7 +116,7 @@
 								</div>
 							</div>
 							<div class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row">
-								<a href="#" class="btn btn-dark custom-btn-style-1 font-weight-semibold text-3 ws-nowrap ms-4 d-none d-lg-block"><span>Book a Table</span></a>
+								<a href="https://leonardo.elrancheromexicanrestnj.com/" target="_blank" class="btn btn-dark custom-btn-style-1 font-weight-semibold text-3 ws-nowrap ms-4 d-none d-lg-block"><span>Order Online</span></a>
 								<div class="header-nav-features header-nav-features-no-border">
 									<div class="header-nav-feature header-nav-features-search d-inline-flex">
 										<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search">
@@ -137,8 +137,8 @@
 								<a href="https://www.instagram.com" class="text-decoration-none text-color-dark text-color-hover-primary text-5 mx-4" target="_blank">
 									<i class="fab fa-instagram"></i>
 								</a>
-								<a href="https://www.tripadvisor.com/" class="text-decoration-none" target="_blank">
-									<img width="32" height="32" src="img/demos/restaurant/icons/tripadvisor.svg" alt="Tripadvisor Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark svg-fill-color-hover-primary', 'fadeIn': false}" />
+								<a href="https://www.facebook.com/elrancherotaqueria/" class="text-decoration-none text-color-dark text-color-hover-primary text-5 mx-4" target="_blank">
+									<i class="fab fa-facebook"></i>
 								</a>
 								<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 									<i class="fas fa-bars"></i>
@@ -300,7 +300,7 @@
 								</li>
 								<li>
 									<i class="fas fa-angle-right text-color-default"></i>
-									<a href="#" class="link-hover-style-1 ms-1"> Payment Methods</a>
+									<a onclick="payments()" class="link-hover-style-1 ms-1" style="cursor: pointer;"> Payment Methods</a>
 								</li>
 							</ul>
 						</div>
@@ -324,6 +324,7 @@
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 		<!-- Theme Custom -->
 		<script src="js/custom.js"></script>
@@ -332,6 +333,11 @@
 		<script src="js/theme.init.js"></script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	<script>
+		function payments(){
+			Swal.fire('Payment Methods', 'We accept Cash, Apple Pay, Credit and Debit Card', 'success');
+		}
+	</script>
 		<script>
 
 			/*
